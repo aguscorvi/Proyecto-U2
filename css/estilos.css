@@ -8,35 +8,34 @@
     font-size: 15px;
 }
 
+/*estilos header*/
 
 header {
-    background: black; 
-    padding: 30px;
-    padding-bottom: 50px;
-    margin: 50px 50px 0px 50px;
-    
-    
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background: #312e2e;
+    padding: 20px;
+    display: flex;
+    margin: auto;
 }
+
+header nav ul {
+    display: flex;
+}
+
 header nav ul li {
-    display: inline-block;
-    padding-right: 60px;
-    float: right;
-    
-    
+    margin: 0 50px;
 }
 
-nav p {
-    color: white;
-    font-family: Arial Black;
-    font-size: 30px;
-    float: left;
-    
+header a p {
+    font-family: Arial black;
+    font-size: 25px;
 }
 
-nav img {
-    width: 50px;
-    float: left;
-    
+nav a:hover {
+    text-decoration-line: underline;
 }
 
 .sticky {
@@ -45,81 +44,69 @@ nav img {
     z-index: 1;
 }
 
-a{
+header a{
     color: white;
-    
+    font-family: arial, black;
+}
+
+/* estilos seccion 1 */
+
+#section1 img {
+    width: 100%;
 }
 
 #uno {
-    float: right;
-    background-image: url(../img/bono.png);
-    background-repeat: no-repeat;
-    background-color: black;
-    height: 500px;
-    margin: 50px;;
+    background: ghostwhite;
+    height: 390px;
+    margin-bottom: 300px;
 }
 
 #uno h1 {
-   
+    text-align: center;
     font-size: 60px;
-    color: white;
     font-family: Arial Black;
-    margin-top: 50px;
+    padding-top: 40px;
+    color:  #312e2e;
 }
+
+
 
 #uno h2 {
-   
-    font-size: 60px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-#uno h3 {
-   
     font-size: 20px;
-    color: white;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-#uno p {
-    color: white;
-    margin-bottom: 20px;
-
-}
 
 #uno a {
     font-family: arial black;
-    border: 1px solid white;
+    border: 1px solid black;
     font-size: 12px;
     border-radius: 30px;
     padding: 2px 9px 2px 9px;
-    background-color: white;
     color: black;
+    margin-left: 610px; 
 }
 
-#uno div {
-    float: left;
-    width: 55%;
-    height: 400px;
+#uno p {
+    text-align: center;
+    margin-left: 340px;
+    display: block;
+    width: 685px;
 }
 
 
+.video iframe {
+    margin-left: 350px;
+    margin-bottom: 35px;
+}
 
-.video1 {
+/*estilos seccion 2*/
+
+#section2 {
     margin-left: 50px;
     
-}
-
-#titulo_video{
-    color: black;
-    font-family: arial black;
-    margin: 100px;
-   
-}
-#section2 {
- 
-    margin: 50px;
-    height: 400px;
 }
 
 #section2 h2 {
@@ -129,39 +116,50 @@ a{
     padding-top: 250px;
 }
 
-.p1 {
-    width: 30%;
-    float: left;
-    padding-right: 10px;
+.flex {
+    display: flex;
+    
+    
 }
 
-.p2 {
-    width: 30%;
-    vertical-align: text-bottom;
-    float: left;
-    margin-bottom: 250px;
+.flex p{
+    padding-right: 20px;
+    
 }
 
-#section3 {
-    margin: 300px;
+
+
+
+/*estilos seccion 3*/
+
+#section3{
+    margin-top: 300px;
 }
-#section3 h1 {
+.discos {
+    height: 450px;
+    margin-left: 250px;
+}
+.discos img{
+    width: 500px;
+    float: left;
+    
+}
+
+#section3 .discos h1 {
     padding-top: 100px;
     margin-bottom: 20px;
     font-family: arial black;
 }
 
-#section3 img {
-    width: 500px;
-    float: left;
-    display: inline block;
-}
-
-#section3 p {
+#section3 .discos p{
+    width: 300px;
+    margin-right: 280px;
     margin-bottom: 20px;
+    float: left;
 }
 
-#section3 a {
+#section3 .discos a {
+    clear: both;
     color: black;
     font-family: arial black;
     border: 1px solid black;
@@ -172,21 +170,44 @@ a{
 
 
 
+/*estilos seccion 4*/
 
 
 
 
 
 
+/*estilos footer*/
 
-
-
-
-footer a {
-    float: right;
-    font-size: 40px;
+footer {
+    background-color: black;
+    height: 75px;
 }
 
+.fixed{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+.fixed i {
+   font-size: 30px;
+    color: #312e2e;
+}
+footer a i{   
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 0px 25px 0px 25px;
+    margin-top: 30px;
+}
+footer a {
+    color: white;
+}
 footer p {
-    font-size: 11px;
+    margin-top: 30px;
+    padding-right: 30px;
+    float: right;
+    font-size: 13px;
+    font-family: arial;
+    color: white;
 }
