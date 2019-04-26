@@ -29,8 +29,8 @@ header nav ul li {
     margin: 0 50px;
 }
 
-header a p {
-    font-family: Arial black;
+#logo {
+    font-family: Arial Black;
     font-size: 25px;
 }
 
@@ -172,7 +172,18 @@ header a{
 
 /*estilos seccion 4*/
 
+#section4 {
+    background: ghostwhite;
+    display: flex;
+    
+}
+#section4 img{
+    width: 250px;
+}
 
+#section4 article {
+    padding: 50px;
+}
 
 
 
@@ -180,7 +191,7 @@ header a{
 /*estilos footer*/
 
 footer {
-    background-color: black;
+    background-color: #312e2e; 
     height: 75px;
 }
 
