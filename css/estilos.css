@@ -91,21 +91,25 @@ header a{
 
 #uno p {
     text-align: center;
-    margin-left: 340px;
-    display: block;
+    margin: auto;
     width: 685px;
 }
 
 
 .video iframe {
-    margin-left: 350px;
-    margin-bottom: 35px;
+    display: block;
+    margin: auto;
 }
 
 /*estilos seccion 2*/
 
 #section2 {
-    margin-left: 50px;
+    background-image: url(../img/banda.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+
     
 }
 
@@ -119,12 +123,12 @@ header a{
 .flex {
     display: flex;
     
-    
+
 }
 
-.flex p{
+.flex div{
     padding-right: 20px;
-    
+width: 30%
 }
 
 
@@ -145,6 +149,10 @@ header a{
     
 }
 
+.discos .contenido {
+    float: left;
+}
+
 #section3 .discos h1 {
     padding-top: 100px;
     margin-bottom: 20px;
@@ -155,11 +163,9 @@ header a{
     width: 300px;
     margin-right: 280px;
     margin-bottom: 20px;
-    float: left;
 }
 
 #section3 .discos a {
-    clear: both;
     color: black;
     font-family: arial black;
     border: 1px solid black;
@@ -175,13 +181,15 @@ header a{
 #section4 {
     background: ghostwhite;
     display: flex;
-    
+    flex-wrap: wrap;
 }
+
 #section4 img{
     width: 250px;
 }
 
 #section4 article {
+    width: 30%;
     padding: 50px;
 }
 
