@@ -279,4 +279,12 @@ footer p {
     #uno p {
         width: 100px;
     }
+
+    footer, header {
+        display: none;
+    }
+
+    body{
+        background: red;
+    }
 }
