@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: 'Arial Narrow';
     font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 /*estilos header*/
@@ -203,15 +204,13 @@ width: 30%
     width: 300px;
     height: 200px;
     margin: auto;
+    border-radius: 15px;
 }
 
 #section4 article {
     width: 30%;
     padding: 50px;
 }
-
-
-
 
 /*estilos footer*/
 
@@ -254,4 +253,30 @@ footer p {
     font-size: 13px;
     font-family: arial;
     color: white;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .articulos {
+        display: block;
+    }
+
+    .discos img {
+        width: 300px;
+    }
+
+    .discos .contenido {
+        clear: both;
+        width: 100%;
+        margin: auto;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    #uno p {
+        width: 100px;
+    }
 }
