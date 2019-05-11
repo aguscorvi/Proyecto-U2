@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 header a {
-    color: white;
+    color: white ;
     font-family: arial, black;
 }
 
@@ -109,32 +109,51 @@ header a {
 
 /*estilos seccion 2*/
 
-#section2 {
+
+#section2 .titulo {
     background-image: url(../img/banda.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-
+    background-attachment: fixed; 
+    height: 300px;
     
 }
 
+#section2 .titulo p{
+    font-size: 90px;
+    text-align: center;
+    padding-top: 75px;
+    font-family: Arial Black;
+    color: white;
+    opacity: 0.85;
+}
+
+
 #section2 h2 {
     font-family: Arial Black;
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding-top: 250px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0 20px 0px;
 }
 
 .flex {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 
 }
 
 .flex div {
+    
     padding-right: 20px;
-width: 30%
+    width: 30%;
+    
 }
+
+#section2 h2, .flex {
+    margin-left: 25px;
+}
+
 
 
 
@@ -145,6 +164,13 @@ width: 30%
     width: 1000px;
     padding: 150px 0 200px 0px;
     margin: auto;
+}
+
+#section3 h2 {
+    font-family: Arial Black;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 0 20px 0px;
 }
 .discos {
     height: 450px;
@@ -191,6 +217,31 @@ width: 30%
 
 #section4 {
     background: ghostwhite;
+    padding-bottom: 90px;
+}
+
+#section4 h2 {
+    font-family: Arial Black;
+    font-size: 30px;
+    text-align: center;
+    padding: 150px 0 20px 0px;
+}
+
+#section4 a{
+    color: black;
+    font-family: arial black;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 2px 9px 2px 9px;
+    text-align: center;
+    margin-left: 40%;
+    
+}
+
+#section4 a:hover{
+    color: white;
+    background: #312e2e;
 }
 
 .articulos{
@@ -198,13 +249,14 @@ width: 30%
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
 
 #section4 img{
     width: 300px;
     height: 200px;
     margin: auto;
-    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 #section4 article {
@@ -212,17 +264,40 @@ width: 30%
     padding: 50px;
 }
 
+#section4 h1{
+    text-align: center;
+    padding: 0px 0 15px 0;
+}
+
+#section4 p{
+    display: none;
+}
+
 /*estilos footer*/
 
 footer {
     background-color: #312e2e; 
-    height: 75px;
+
+}
+
+
+footer img {
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+    
+}
+.redes{
+    margin: 5px;
+    text-align: center;
+    
 }
 
 .fixed{
     position: fixed;
-    right: 100px;
-    bottom: 100px;
+    right: 50px;
+    bottom: 150px;
 }
 
 .fixed i {
@@ -234,22 +309,11 @@ footer {
     font-size: 33px;
 }
 
-footer a i{   
-    font-size: 25px;
-    border-radius: 30px;
-    padding: 0px 25px 0px 25px;
-    margin-top: 30px;
-}
-
-
-footer a {
-    color: white;
-}
 
 footer p {
-    margin-top: 30px;
-    padding-right: 30px;
-    float: right;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
     font-size: 13px;
     font-family: arial;
     color: white;
@@ -258,26 +322,8 @@ footer p {
 /* mobile */
 
 @media screen and (max-width: 768px) {
-    .articulos {
-        display: block;
+    header nav ul {
+        flex-direction: column;
     }
-
-    .discos img {
-        width: 300px;
-    }
-
-    .discos .contenido {
-        clear: both;
-        width: 100%;
-        margin: auto;
-    }
-
-    .video iframe {
-        width: 100%;
-    }
-
-    #uno p {
-        width: 100px;
-    }
-
+    
 }
