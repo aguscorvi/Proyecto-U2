@@ -22,6 +22,7 @@ header {
     margin: auto;
 }
 
+
 header nav ul {
     display: flex;
 }
@@ -54,8 +55,15 @@ header a {
     font-family: arial, black;
 }
 
+header a:hover{
+    color: white;
+}
+
 /* estilos seccion 1 */
 
+#section1 img{
+    width: 100%;
+}
 
 #uno {
     background: ghostwhite;
@@ -180,7 +188,7 @@ header a {
     
 }
 
-.discos .contenido {
+body #section3 .discos .contenido {
     float: left;
 }
 
@@ -269,6 +277,8 @@ header a {
 #section4 p{
     display: none;
 }
+
+    
 
 /*estilos footer*/
 
@@ -360,10 +370,13 @@ footer p {
     width: 100%;
    }
 
-   .discos .contenido {
+   body #section3 .discos .contenido {
        float: none;
+       width: 60%;
+       margin: auto;
    }
 
+   
    .articulos {
        width: auto;
        flex-direction: column;
@@ -376,4 +389,12 @@ footer p {
    .fixed {
        display: none;
    }
+
+   #section4 img{
+       display: block;
+   }
+
+   
+
+
 }
