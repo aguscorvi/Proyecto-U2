@@ -167,7 +167,7 @@ header a:hover{
 
 #section3 {
     width: 1000px;
-    padding: 150px 0 200px 0px;
+    padding-top: 150px;
     margin: auto;
 }
 
@@ -329,72 +329,108 @@ footer p {
 /* mobile */
 
 @media screen and (max-width: 768px) {
-   nav {
-       display: none;
-   }
+    nav {
+        display: none;
+    }
+ 
+    #uno h1 {
+        font-size: 50px;
+    }
+ 
+    #section1 img {
+        display: none;
+    }
+ 
+    .video{
+        margin: 25px;
+    }
+    .video iframe {
+        width: 100%;
+    }
+ 
+    #uno p {
+        width: 100%;
+    }
 
-   #uno h1 {
-       font-size: 30px;
-   }
+    #section2 {
+        padding-top: 50px;
+    }
+ 
+    #section2 .titulo p {
+        font-size: 70px;
+    }
+ 
+    #section3 {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+     
+    .flex {
+        flex-direction: column;
+    }
+ 
+    .flex div {
+        width: 100%;
+    }
+ 
+    .discos {
+        height: auto;
+        margin: 10px;
+        padding-bottom: 50px;
+    }
+ 
+    #section3 .discos h1 {
+        padding-top: 0;
+        font-size: 18px;
+        
+    }
 
-   .video iframe {
-       width: 100%;
-   }
+    #section3 h2 {
+        margin-top: 50px;
+    }
 
-   #uno p {
-       width: 100%;
-   }
-
-   #section2 .titulo p {
-       font-size: 40px;
-   }
-
-   #section3 {
-       width: 100%;
-   }
+    #section4 h2 {
+        padding-top: 0px;
+    }
+ 
+    .discos img {
+     float: none;
+     width: 100%;
+     margin: auto;
+     padding: 0 25px 0 25px;
+    }
+ 
+    body #section3 .discos .contenido {
+        float: none;
+        width: 60%;
+        margin: auto;
+    }
+ 
     
-   .flex {
-       flex-direction: column;
-   }
+    .articulos {
+        width: auto;
+        flex-direction: column;
+    }
+ 
+    #section4 article {
+        width: 100%;
+    }
+ 
+    .fixed {
+        display: none;
+    }
+ 
+    #section4 img{
+        display: block;
+    }
+ 
+    .links{
+        text-align: center;
+    }
 
-   .flex div {
-       width: 100%;
-   }
-
-   .discos {
-       height: auto;
-   }
-
-   .discos img {
-    float: none;
-    width: 100%;
-   }
-
-   body #section3 .discos .contenido {
-       float: none;
-       width: 60%;
-       margin: auto;
-   }
-
-   
-   .articulos {
-       width: auto;
-       flex-direction: column;
-   }
-
-   #section4 article {
-       width: 100%;
-   }
-
-   .fixed {
-       display: none;
-   }
-
-   #section4 img{
-       display: block;
-   }
-
-   
-
+    #section4 a {
+        margin: auto;
+    }
 
 }
